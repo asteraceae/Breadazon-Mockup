@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% for row in order %}
+<article class="media content-section">
+  <div class="media-body">
+    <h2><a class="article-title" >Order ID #{{row.order_ID}}</a></h2>
+    <div class="article-metadata">
+      <a class="mr-4 alignleft">Time Submitted: {{row.time_submitted}}<br></a>
+      <img class="article-img rounded-square" src="{{ url_for('static', filename='breadpics/' + row.image_file)}}">
+      <a class="mr-4 alignleft"><br>Product: {{row.product_name}}, Quantity: {{row.order_quantity}}</a>
+    </div>
+  </div>
+</article>
+{% endfor %}
+{% endblock content %}

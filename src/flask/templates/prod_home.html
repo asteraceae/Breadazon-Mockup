@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class= "sidenav">
+  <div class="content-section2">
+    <h2>Filters</h2>
+    <p class=''>
+      <b>Category<br></b>
+      <a class="mr-4" href="{{ url_for('filter_home', filters = 'Sandwiches') }}">Sandwiches</a>
+      <a class="mr-4" href="{{ url_for('filter_home', filters = 'Donuts') }}">Donuts</a>
+      <a class="mr-4" href="{{ url_for('filter_home', filters = 'Baguette') }}">Baguette</a>
+      <a class="mr-4" href="{{ url_for('filter_home', filters = 'Cake') }}">Cake</a>
+      <b>Bakery<br></b>
+      <a class="mr-4" href="{{ url_for('filter_bake', filters = 'Big Street Bake Inc') }}">Big Street Bake Inc</a>
+      <a class="mr-4" href="{{ url_for('filter_bake', filters = 'Bakely Inc') }}">Bakery Inc</a>
+      <a class="mr-4" href="{{ url_for('filter_bake', filters = 'CheeseCakeFactory') }}">Cheesecake Factory</a>
+      <a class="mr-4" href="{{ url_for('filter_bake', filters = 'Sakai Bakely') }}">Sakai Bakery</a>
+      <ul class="list-group">
+      </ul>
+    </p>
+  </div>
+</div>
+
+{% for row in outString %}
+<article class="media content-section">
+  <div class="media-body">
+    <h2><a class="article-title" href="{{ url_for('product', product_id = row.product_ID) }}">{{ row.product_name }}</a></h2>
+    <img class="rounded-square article-img" src="{{ url_for('static', filename='breadpics/' + row.image_file)}}" width="500">
+    <div class="article-metadata">
+      <a class="mr-4 alignleft" href="{{ url_for('product', product_id = row.product_ID) }}">{{row.price}}</a>
+      <a class="ml-4 alignright">{{row.bakery_name}}</a>
+    </div>
+  </div>
+</article>
+{% endfor %}
+{% endblock content %}

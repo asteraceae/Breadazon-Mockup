@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Shopping Cart</title>
+      <script style ="text/javascript" src="static/gg.js"></script>
+      <!--<link rel="stylesheet" href="static/car.css">-->
+
+  </head>
+  <body>
+    <div class="content-section3">
+     <table>
+         <thead>
+             <tr>
+                 <th class="tdone">Shopping Cart:</th>
+                 <!--<th class="tdtwo">Name</th>
+                 <th class="tdthree">Quantity</th>
+                 <th class="tdfour">Price</th>
+                 <th class="tdfive">Subtotal</th>
+                 <th class="tdsix">Action</th>-->
+             </tr>
+         </thead>
+                  <tbody>
+           <tr class="trclass">
+                 <td class="tdone itemno"><img src="static/breadpics/Hot Dog.png" width="50px" height="50px" /></td>
+                 <td class="tdtwo ">Hot Dog</td>
+                 <td class="tdthree"><span class="jiajie"><input type="button" value="-"><span class="num">0</span><input type="button" value="+"></span></td>
+                 <td class="tdfour"><span>Price：</span><span class="unit">6.49</span></td>
+                 <td class="tdfive"><span>Subtotal：</span><span class="subtal">0</span></td>
+                 <td class="tdsix"><button class="del">Delete</button></td>
+             </tr>
+               <tr class="trclass">
+                 <td class="tdone itemno"><img src="static/breadpics/Tuna Sandwich.png" width="50px" height="50px" /></td>
+                 <td class="tdtwo">Tuna Sandwich</td>
+                 <td class="tdthree"><span class="jiajie"><input type="button" value="-"><span class="num">0</span><input type="button" value="+"></span></td>
+                 <td class="tdfour"><span>Price：</span><span class="unit">3.49</span></td>
+                 <td class="tdfive"><span>Subtotal：</span><span class="subtal">0</span></td>
+                 <td class="tdsix"><button class="del">Delete</button></td>
+             </tr>
+               <tr class="trclass">
+                 <td class="tdone itemno"><img src="static/breadpics/CheeseSteak Sandwich.png" width="50px" height="50px" /></td>
+                 <td class="tdtwo">CheeseSteak Sandwich</td>
+                 <td class="tdthree"><span class="jiajie"><input type="button" value="-"><span class="num">0</span><input type="button" value="+"></span></td>
+                 <td class="tdfour"><span>Price：</span><span class="unit">2.49</span></td>
+                 <td class="tdfive"><span>Subtotal：</span><span class="subtal">0</span></td>
+                 <td class="tdsix"><button class="del">Delete</button></td>
+             </tr>
+               <tr>
+                 <td class="tdone itemno"><img src="static/breadpics/Chicken Sandwich.png" width="50px" height="50px" /></td>
+                 <td class="tdtwo">Chicken Sandwich</td>
+                 <td class="tdthree"><span class="jiajie"><input type="button" value="-"><span class="num">0</span><input type="button" value="+"></span></td>
+                 <td class="tdfour"><span>Price：</span><span class="unit">4.49</span></td>
+                 <td class="tdfive"><span>Subtotal：</span><span class="subtal">0</span></td>
+                 <td class="tdsix"><button class="del">Delete</button></td>
+             </tr>
+               <tr class="trclass">
+                 <td class="tdone itemno"><img src="static/breadpics/Vegan Sandwich.png" width="50px" height="50px" /></td>
+                 <td class="tdtwo">Vegan Sandwich</td>
+                 <td class="tdthree"><span class="jiajie"><input type="button" value="-"><span class="num">0</span><input type="button" value="+"></span></td>
+                 <td class="tdfour"><span>Price：</span><span class="unit">5.49</span></td>
+                 <td class="tdfive"><span>Subtotal：</span><span class="subtal">0</span></td>
+                 <td class="tdsix"><button class="del">Delete</button></td>
+             </tr>
+              <tr class="trclass">
+                 <td class="tdone itemno"><img src="static/breadpics/Crusty French Baguette.png" width="50px" height="50px" /></td>
+                 <td class="tdtwo">Crusty French Baguette</td>
+                 <td class="tdthree"><span class="jiajie"><input type="button" value="-"><span class="num">0</span><input type="button" value="+"></span></td>
+                 <td class="tdfour"><span>Price：</span><span class="unit">15.49</span></td>
+                 <td class="tdfive"><span>Subtotal：</span><span class="subtal">0</span></td>
+                 <td class="tdsix"><button class="del">Delete</button></td>
+             </tr>
+              <tr class="trclass">
+                 <td class="tdone itemno"><img src="static/breadpics/Plain Baguette.png" width="50px" height="50px" /></td>
+                 <td class="tdtwo">Plain Baguette</td>
+                 <td class="tdthree"><span class="jiajie"><input type="button" value="-"><span class="num">0</span><input type="button" value="+"></span></td>
+                 <td class="tdfour"><span>Price：</span><span class="unit">20.99</span></td>
+                 <td class="tdfive"><span>Subtotal：</span><span class="subtal">0</span></td>
+                 <td class="tdsix"><button class="del">Delete</button></td>
+             </tr>
+             <tr class="trclass">
+                <td class="tdone itemno"><img src="static/breadpics/Salted Baguette.png" width="50px" height="50px" /></td>
+                <td class="tdtwo">Salted Baguette</td>
+                <td class="tdthree"><span class="jiajie"><input type="button" value="-"><span class="num">0</span><input type="button" value="+"></span></td>
+                <td class="tdfour"><span>Price：</span><span class="unit">25.49</span></td>
+                <td class="tdfive"><span>Subtotal：</span><span class="subtal">0</span></td>
+                <td class="tdsix"><button class="del">Delete</button></td>
+            </tr>
+            <tr class="trclass">
+               <td class="tdone itemno"><img src="static/breadpics/Spicy Baguette.png" width="50px" height="50px" /></td>
+               <td class="tdtwo">Spicy Baguette</td>
+               <td class="tdthree"><span class="jiajie"><input type="button" value="-"><span class="num">0</span><input type="button" value="+"></span></td>
+               <td class="tdfour"><span>Price：</span><span class="unit">30.49</span></td>
+               <td class="tdfive"><span>Subtotal：</span><span class="subtal">0</span></td>
+               <td class="tdsix"><button class="del">Delete</button></td>
+           </tr>
+           <tr class="trclass">
+              <td class="tdone itemno"><img src="static/breadpics/Chocolate Donuts.png" width="50px" height="50px" /></td>
+              <td class="tdtwo">Chocolate Donuts</td>
+              <td class="tdthree"><span class="jiajie"><input type="button" value="-"><span class="num">0</span><input type="button" value="+"></span></td>
+              <td class="tdfour"><span>Price：</span><span class="unit">14.49</span></td>
+              <td class="tdfive"><span>Subtotal：</span><span class="subtal">0</span></td>
+              <td class="tdsix"><button class="del">Delete</button></td>
+          </tr>
+          <tr class="trclass">
+             <td class="tdone itemno"><img src="static/breadpics/Sugar Donuts.png" width="50px" height="50px" /></td>
+             <td class="tdtwo">Sugar Donuts</td>
+             <td class="tdthree"><span class="jiajie"><input type="button" value="-"><span class="num">0</span><input type="button" value="+"></span></td>
+             <td class="tdfour"><span>Price：</span><span class="unit">12.49</span></td>
+             <td class="tdfive"><span>Subtotal：</span><span class="subtal">0</span></td>
+             <td class="tdsix"><button class="del">Delete</button></td>
+         </tr>
+
+         <tr class="trclass">
+            <td class="tdone itemno"><img src="static/breadpics/Candy Donuts.png" width="50px" height="50px" /></td>
+            <td class="tdtwo">Candy Donuts</td>
+            <td class="tdthree"><span class="jiajie"><input type="button" value="-"><span class="num">0</span><input type="button" value="+"></span></td>
+            <td class="tdfour"><span>Price：</span><span class="unit">30.49</span></td>
+            <td class="tdfive"><span>Subtotal：</span><span class="subtal">0</span></td>
+            <td class="tdsix"><button class="del">Delete</button></td>
+        </tr>
+        <tr class="trclass">
+           <td class="tdone itemno"><img src="static/breadpics/Szechuan Donuts.png" width="50px" height="50px" /></td>
+           <td class="tdtwo">Szechuan Donuts</td>
+           <td class="tdthree"><span class="jiajie"><input type="button" value="-"><span class="num">0</span><input type="button" value="+"></span></td>
+           <td class="tdfour"><span>Price：</span><span class="unit">22.49</span></td>
+           <td class="tdfive"><span>Subtotal：</span><span class="subtal">0</span></td>
+           <td class="tdsix"><button class="del">Delete</button></td>
+       </tr>
+       <tr class="trclass">
+          <td class="tdone itemno"><img src="static/breadpics/Birthday Cake.png" width="50px" height="50px" /></td>
+          <td class="tdtwo">Birthday Cake</td>
+          <td class="tdthree"><span class="jiajie"><input type="button" value="-"><span class="num">0</span><input type="button" value="+"></span></td>
+          <td class="tdfour"><span>Price：</span><span class="unit">40.00</span></td>
+          <td class="tdfive"><span>Subtotal：</span><span class="subtal">0</span></td>
+          <td class="tdsix"><button class="del">Delete</button></td>
+      </tr>
+      <tr class="trclass">
+         <td class="tdone itemno"><img src="static/breadpics/Plain Cake.png" width="50px" height="50px" /></td>
+         <td class="tdtwo">Plain Cake</td>
+         <td class="tdthree"><span class="jiajie"><input type="button" value="-"><span class="num">0</span><input type="button" value="+"></span></td>
+         <td class="tdfour"><span>Price：</span><span class="unit">30.00</span></td>
+         <td class="tdfive"><span>Subtotal：</span><span class="subtal">0</span></td>
+         <td class="tdsix"><button class="del">Delete</button></td>
+     </tr>
+     <tr class="trclass">
+        <td class="tdone itemno"><img src="static/breadpics/Cheese Cake.png" width="50px" height="50px" /></td>
+        <td class="tdtwo">Cheese Cake</td>
+        <td class="tdthree"><span class="jiajie"><input type="button" value="-"><span class="num">0</span><input type="button" value="+"></span></td>
+        <td class="tdfour"><span>Price：</span><span class="unit">30.00</span></td>
+        <td class="tdfive"><span>Subtotal：</span><span class="subtal">0</span></td>
+        <td class="tdsix"><button class="del">Delete</button></td>
+    </tr>
+             <tr><td   colspan="6"; class="talast"><span>Total <span class="goods_num">0</span> items; Total cost <span class="pricetal">0</span> dollars; Most expensive item is <span class="pricest">0</span> dollars</span>   <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{{ url_for('checkout') }}">Checkout</a></td></td></tr>
+         </tbody>
+     </table>
+     </div>
+ </body>
+ </html>
+
+
+{% endblock content %}

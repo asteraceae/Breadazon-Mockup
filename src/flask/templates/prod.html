@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+  <article class="media content-section">
+    <div class="media-body">
+        <h2><a class="mr-2" href="#">{{ prod.product_name }}</a></h2>
+          <div>
+            <img class="article-img2 rounded-square" src="{{ url_for('static', filename='breadpics/' + prod.image_file)}}" width = 70%>
+          </div>
+      <p class="article-content"> <b>Item Description: </b>{{prod.description}}</p>
+    <div class = "article-metadata">
+    <a class="mr-2" href="{{ url_for('product', product_id = prod.product_ID) }}">Price: {{prod.price}}</a><br>
+    <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{{ url_for('cart') }}">Add to Cart</a>
+
+    </div>
+    </div>
+  </article>
+  <!-- Modal -->
+{% endblock content %}

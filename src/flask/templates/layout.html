@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+    <main role="main" class="container">
+      <!-- New row -->
+      <div class="row">
+        <div class="col-md-4">
+          {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+              {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                  {{ message }}
+                </div>
+              {% endfor %}
+            {% endif %}
+          {% endwith %}
+        </div>
+
+        <div class="col-md-4">
+          {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+              {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                  {{ message }}
+                </div>
+              {% endfor %}
+            {% endif %}
+          {% endwith %}
+        </div>
+
+        <div class="col-md-4">
+          <div class="content-section">
+            <h2>Filters</h2>
+            <p class='text-muted'>
+              <b>Category<br></b>
+              <b>Bakery<br></b>
+              <ul class="list-group">
+              </ul>
+            </p>
+          </div>
+        </div>
+          {% block content %}{% endblock %}
+
+      </div>
+    </main>
